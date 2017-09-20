@@ -1,21 +1,22 @@
----
+
 layout: markdown_page
 title: "GitLab Handbook Usage"
 ---
 
 At GitLab our handbook is extensive and keeping it relevant is an important part of everyone's job. The reasons for having a handbook are:
+在GitLab我们的手册涉及范围很广，让它与每个人的工作关联起来是工作中非常重要的一部分，制作手册的原因是：
 
-1. Reading is much faster than listening.
-1. Reading is async, you don't have to interrupt someone or wait for them to become available.
-1. Recruiting is easier if people can see what we stand for and how we operate.
-1. Retention is better if people know what they are getting into before they join.
-1. Onboarding is easier if you can find all relevant information spelled out.
-1. Teamwork is easier if you can read how other parts of the company work.
-1. Discussing changes is easier if you can read what the current process is.
-1. Communicating change is easier if you can just point to a diff.
-1. Everyone can contribute to it by proposing a change via a merge request.
+1. 阅读比听更快。
+1. 阅读是异步的，你不需要去打扰别人或等他们有空。
+1. 更容易招聘到员工：人们可以知道我们代表什么和我们如何运作。
+1. 这样更容易留下员工：在入职前可以让他们知道他们会进入什么样的公司。
+1. 因为可以找到所有相关的信息，所以培训会更简单。
+1. 团队合作更简单：根据这个手册可以知道公司其他部门是如何工作的。
+1. 讨论变更更容易：因为可以获取到目前的进展情况。
+1. 沟通变更更简单：只要看一下代码差异(diff)就可以了。
+1. 每个人都可以做出贡献：大家都可以在合并请求上提出建议。
 
-Documenting things in the handbook takes more time initially and it requires thinking. But it saves time over a longer period and it is essential to scale and adapt our organization. It is not unlike writing tests for your software. Please follow these guidelines and remind others of them.
+编写手册用了很长时间和思考。它能在较长的时间内节省时间，对我们的组织进行规模化和调整是非常必要的。请遵循这个指南，并提醒他人。
 
 1. If you need to discuss with a team member for help please realize that probably the majority of the community also doesn't know, be sure to **document** the answer to radiate this information to the whole community. After the question is answered, discuss where it should be documented and who will do it. You can remind other people of this by asking "Who will document this?"
 1. When you discuss something in chat always try to **link** to a URL where relevant, for example, the documentation you have a question about or the page that answered your question. You can remind other people of this by asking "Can you please link?"

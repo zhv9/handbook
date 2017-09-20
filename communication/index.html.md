@@ -21,11 +21,11 @@ ever-growing remote-only company.
 Please keep in mind that you represent GitLab and our culture, also on Social Media.
 When commenting on posts please keep in mind: "Don't argue but represent."
 
-### Internal Communication
+### 内部沟通
 
 1. All written communication happens in English, even when sent one on one,
 because sometimes you need to forward an email or chat.
-1. Use **asynchronous communication** when possible (issues and email instead of chat), issues are preferred over email, email is preferred over chat, announcements happen on the team call agenda, and [people should be able to do their work without getting interrupted by chat](https://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.21t7089jk). To use email instead of chat it is OK to send _internal_ email that contain only a short message, similar as you would use it in chat. Save time by not including a salutation like 'Hi Emma,' and first write the subject the email which you copy paste into the body. You are not expected to be available all the time, it is perfectly fine to wait with responding to emails and chat mentions until your planned work hours.
+1. 使用 **异步沟通** 如果可以的话 (用issues和email代替聊天工具), 使用issues比电子邮件更好, 电子邮件比聊天工具更好, 公告在进行团队议程时发布, 并且 [大家应该在没有聊天工具打扰的情况下工作](https://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.21t7089jk). To use email instead of chat it is OK to send _internal_ email that contain only a short message, similar as you would use it in chat. Save time by not including a salutation like 'Hi Emma,' and first write the subject the email which you copy paste into the body. You are not expected to be available all the time, it is perfectly fine to wait with responding to emails and chat mentions until your planned work hours.
 1. Sometimes synchronous communication is the better option, but do not default
 to it. See the [guidelines on video chats](#video-chats) for more detail.
 1. It is very OK to ask as many questions as you have, but ask them so many
