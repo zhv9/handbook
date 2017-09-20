@@ -1,0 +1,6 @@
+- assignments.each do |assignment|
+  = link_to "@#{assignment.username}", "https://gitlab.com/#{assignment.username}"
+  - if assignment.has_description?
+    %small
+      = assignment.description
+  %br

@@ -1,0 +1,1 @@
+Courses got moved to [the root](/courses).
