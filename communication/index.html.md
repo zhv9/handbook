@@ -109,29 +109,27 @@ out to any of the other C-level GitLabbers or our board member Bruce Armstrong.
 
 ### GitLab Workflow
 
-#### Everything starts with an issue
+#### 所有的事情开始于建立issue(事务、工单、问题)
 
-1. Always **create** an issue for things you work on. If it is worth spending time on, it is worth creating an issue for it since that enables other people to learn and help. You can always edit the description or close it when the problem is something different or disappears.
-1. If a user suggests an enhancement, try and find an existing issue that addresses their concern, or create a new one. Ask if they'd like to elaborate on their idea in one of these issues.
-1. **Double link** issues to prevent internal confusion and us failing to report back to the reporters. For example, open an issue with a link to ZenDesk and close the issue with a copy of the response. Or add "Report: " lines to the description with links to relevant issues and feature requests and ensure they are closed and note this with a comment. If you are not responsible for reporting back please do not close an issue, instead re-assign it.
-1. If two issues are related, **crosslink** them (a link from each issue to the other one). Put the link at the top of each issue's description with a short mention of the relationship (Report, etc.). If there are more than 2 issues, use one issue as the central one and crosslink all issues to this one. Please, also crosslink between ZenDesk and GitLab issues.
-1. After a discussion about a feature **update the issue body** with the consensus or final conclusions. This makes it much easier to see the current state of an issue for everyone involved in the implementation and prevents confusion and discussion later on.
-1. Submit the **smallest** item of work that makes sense. When creating an issue describe the smallest fix possible, put suggestions for enhancements in separate issues and link them. If you're new to GitLab and are writing documentation or instructions, submit your first merge request for at most 20 lines.
-1. Do not leave issues open for a long time, issues should be **actionable** and realistic. If you are assigned to an issue but don't have time to work on it, assign it to someone else.
-1. Make a conscious effort to **prioritize**<a name="prioritize"></a> your work. The priority of items depends on multiple factors: Is there a team member waiting for the answer? What is the impact if you delay it? How many people does it affect, etc.? This is detailed in [Engineering Workflow](/handbook/engineering/workflow).
-1. Use the public issue trackers on GitLab.com for everything since [we work out in the open](https://about.gitlab.com/2015/08/03/almost-everything-we-do-is-now-open/). Issue trackers that can be found on the relevant page in the handbook and in the projects under [the gitlab-com group](https://gitlab.com/gitlab-com/).
-1. Pick issues from the current [milestone](https://gitlab.com/groups/gitlab-org/milestones).
-1. We try not to assign issues to people but to have people **pick issues** in a milestone themselves.
-1. Assign an issue to yourself as soon as you start to work on it, but not
-  before that time. If you complete part of an issue and need someone else to
-  take the next step, **re-assign** the issue to that person.
-1. When re-assigning an issue, make sure that the issue body contains the latest information. The issue body should be the **single source of truth**.
-1. When working on an issue, **ask for feedback** from your peers. For example, if you're a designer and you propose a design, ping a fellow designer to review your work. If they approve, you can move it to the next step. If they suggest changes, you get the opportunity to improve your design. This promotes collaboration and advances everyone's skills.
-1. We keep our **promises** and do not make external promises without internal agreement.
-1. Do not close an issue until it is **[done][d-o-d]**.
-1. When **closing** an issue leave a comment explaining why you are closing the issue.
+1. 要干任何事前都要 **建立** 一个issue。如果这个事情值得花时间做，那么就值得花一点时间建立一个issue，这样的话，其他人就可以知道你在干啥，并且帮助你。你可以根据事情的进展随时修改描述或者关闭这个issue。
+1. 如果有人提出了功能提升的建议，那么就想办法找找有没有哪个issue和他们的建议相似，或者建立一个新issue。然后找他们看能不能把改进建议提交到这个issue上。
+1. 双链接issues 会造成内部混乱，导致无法给reporters汇报。例如**Double link** issues to prevent internal confusion and us failing to report back to the reporters. For example, open an issue with a link to ZenDesk and close the issue with a copy of the response. Or add "Report: " lines to the description with links to relevant issues and feature requests and ensure they are closed and note this with a comment. 如果你不负责汇报，请不要关闭这个issue，而是重新指派这个issue。If you are not responsible for reporting back please do not close an issue, instead re-assign it.
+1. 如果两个issue相关，则给他们建立一个 **交叉链接** (在相关的两个issue上都建立对方的链接)。 做法是：在两个issue的最顶端放上链接，并对他们之间的关系进行简短描述(报告或其他东西)。 如果不止两个issues，将一个issue当作中心issue，并建立把所有issue的交叉连接都连到这个issue上。
+1. 在讨论完功能后，一定要把达成的共识或结论 **更新到issue中** 。 这样才更容易看到这个issue的状态。 并且每个包括没有一起讨论的人，以后都可以根据这个更新内容来实现功能。 而且可以避免混乱和再次讨论。
+1. 提交 **最小的**工作项是比较合理的。 创建issue时，尽可能地描述一个比较小的修补程序(可以比较快完成)。 针对不同的issues提出改进建议，并将它们联系起来。 如果要写文档或说明，请首先提交一个最多20行的合并请求。
+1. 不要让issues打开以后好长时间没人管，issues应该是 **可操作** 和 **可实现** 的。 如果被指派一个issue但没时间去做，请将它指派给其他人。
+1. 要有意识地 **优先** 考虑你的工作。 每项工作的优先级取决于多个因素： 有没有团队成员在等候回答？ 这个工作延迟以后的影响是什么？ 有多少人被这事影响？ 有没有其他方面的影响？ 这个是详细的[Engineering Workflow](../engineering/workflow)。
+1. 使用公共issue跟踪页面，来跟踪所有的事情。每个项目都有各自相关的issue跟踪页面。
+1. 选择目前 **里程碑** 中的issues进行工作。例如：[milestone](https://gitlab.com/groups/gitlab-org/milestones).
+1. 一般情况下尽量不指派issues，让大家在里程碑中 **自己选issues**。
+1. 如果准备做哪个issue，那么就先指派给自己。 但不要晚于你开始工作的时间。 如果完成了这个issue的一部分，并且需要其他人再做下一步工作，那么就 **重新指派** 这个issue给那个人。
+1. 在重新指派一个issue前，要确保issue中有最新的进展信息。 issue的内容应该是 **唯一正确的信息来源**。
+1. 在处理一个issue时，尽量 **寻求同事的反馈** 例如：如果你是设计师，并且提出了一个设计，让一个同事复查(review)一下你的设计。如果他们赞同了，那么就可以进行下一步工作了。如果提出了建议，你就有机会提升你的设计了。 这样促进了协作，提升了每个人的技能。
+1. 我们信守 **诺言**，但不达成 **内部共识** 就不对外许诺言。
+1. 在一个issue **[完成][d-o-d]** 前，不允许关闭它。
+1. 在 **关闭** 一个issue时，提交一个说明解释一下为什么关闭这个issue。
 
-[d-o-d]: https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md#definition-of-done
+[d-o-d]: ../engineering/CONTRIBUTING.md#definition-of-done
 
 #### Implement it with a merge request
 
