@@ -23,49 +23,31 @@ When commenting on posts please keep in mind: "Don't argue but represent."
 
 ### 内部沟通
 
-1. All written communication happens in English, even when sent one on one,
-because sometimes you need to forward an email or chat.
-1. 使用 **异步沟通** 如果可以的话 (用issues和email代替聊天工具), 使用issues比电子邮件更好, 电子邮件比聊天工具更好, 公告在进行团队议程时发布, 并且 [大家应该在没有聊天工具打扰的情况下工作](https://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.21t7089jk). To use email instead of chat it is OK to send _internal_ email that contain only a short message, similar as you would use it in chat. Save time by not including a salutation like 'Hi Emma,' and first write the subject the email which you copy paste into the body. You are not expected to be available all the time, it is perfectly fine to wait with responding to emails and chat mentions until your planned work hours.
-1. Sometimes synchronous communication is the better option, but do not default
-to it. See the [guidelines on video chats](#video-chats) for more detail.
-1. It is very OK to ask as many questions as you have, but ask them so many
-people can answer them and many people see the answer (so use issues or public
-chat channels instead of private messages or one-on-one emails) and make sure
-you try to document the answers.
-1. If you mention something (a merge request, issue, commit, webpage, comment,
-etc.) please include a link to it.
-1. All company data should be **shareable** by default. Don't use a local text
-file but leave comments on an issue.
+1. 所有沟通都应该使用中文或英文，即使一对一沟通，因为有时候你需要转发email或者聊天记录。
+1. 使用 **异步沟通** 如果可以的话 (用issues和email代替聊天工具), 使用issues比电子邮件更好, 电子邮件比聊天工具更好, 公告在进行团队议程时发布, 并且 [大家应该在没有聊天工具打扰的情况下工作](https://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.21t7089jk). 使用邮件代替聊天工具。就像和使用聊天工具一样，使用内部的短邮件来发送信息和沟通。不要发送像hi Emma这样的浪费时间的信息，首先复制粘贴email的主题到邮件正文中。因为不是随时有时间，一边按照计划工作一边等邮件回复或聊天工具提醒是非常好的工作方法。
+1. 有时候异步沟通是比较好的选择，但是不是默认的沟通方式。面对面或视频[guidelines on video chats](#video-chats)沟通是更好的方式。
+1. 尽量多问问题，但是问的时候，尽量多带些人，人越多回答的就越多，也会有更多人看到答案。(所以使用issues或开一个聊天群来代替一对一的email)，并且一定要把答案记到文档中。
+1. 如果你提醒一些事情(合并请求，issue，提交内容，网页，评论或其他)，请附上链接。
+1. 所有公司的文档应该默认 **共享** ，不要使用本地文件而要在对应的issue上提交评论或说明。
 
 #### Email
 
-1. When using email, send one email per subject as multiple items
-in one email will cause delays (have to respond to everything) or misses (forgot
-one of the items).
-1. Always reply to emails, even when no action is needed. This lets the other
-person know that you received it. A thread is done when there is a single word
-reply, such as OK, thanks, or done.
-1. If you forward an email without other comments please add FYI (for your
-information) or FYA (for your action). If you forward an external request with FYA it doesn't mean that the company should do whatever is proposed, it just means the person who forwarded it will not follow up on the request themselves and expects you to do so instead.
-1. Email forwarding rules are specified in the shared _GitLab Email Forwarding_ Google Doc accessible only to people in the company. If you want to be added or removed from an internal alias (for example, "sales@gitlab.com"), change a rule, or add a forwarding email alias, please [suggest an edit](https://support.google.com/docs/answer/6033474?hl=en) in the doc.
-1. Emails are asynchronous, for example, if your manager emails you on a weekend it is fine to reply during the workweek.
-1. If an email is or has become urgent feel free to ping people via chat referencing the subject of the email.
+1. 当使用电子邮件时，每封邮件发送一封电子邮件，因为一封邮件中的多个项目会导致延误(需要回复所有事情)或遗漏(忘记其中的一项内容)。
+1. 回复电子邮件，即使什么都不用干。这样可以让其他人知道你收到了。你简单的回复了OK、谢谢或已完成，这事就完了。
+1. 如果你转发了一个没有回复的电子邮件，那么加上FYI (for your information) 或 FYA (for your action)。如果你转发了一个包含FYA的外部的请求，这不代表公司必须做上面提出的要求，只是代表了那个转发的人不跟踪这个请求了，希望你来代替他跟踪这事。
+1. 详细的邮件转发规则请参考：暂无
+1. 电子邮件时异步的，例如：如果你经理周末给你发邮件，那么你到工作时间再回复邮件也是可以的。
+1. 如果邮件很紧急，那么通过即时聊天工具来讨论邮件内容也是可以的。
 
 #### Chat
 
-1. If you use chat please use a public channel whenever possible, mention the
-person you want to reach if it is urgent. This ensures it is easy for other people
-to chime in, and easy to involve other people, if needed.
-1. In chat try to keep the use of keywords that mention the whole channel to a minimum. They should only be used for pings that are both urgent and important, not just important. By overusing channel mentions you make it harder to respond to personal mentions in a timely manner since people get pinged too frequently.
-If something is urgent and important:
-   * Use `@here` to notify all currently _active_ members in the room.
-   * Use `@channel` to notify _ALL_ members in the room, irrespective of away status.
-1. If you agree in a chat to start a video call (typically by asking "Call?")
-the person that didn't leave the last comment starts the call. So either respond
-to the "Call?" request with a video link or say "Yes" and let the other person
-start it. Don't say "Yes" and start a call 5 seconds later since it is likely
-you'll both be creating a video call link at the same time.
-1. The usage of ChatBots for integrations can sometimes depend upon the name of the chat room, you should consult the room about such integrations before changing the name of commonly used / popular rooms in order to avoid inadvertently breaking integrations.
+1. 如果你使用聊天工具，请尽可能使用公共频道，如果需要的话，请提醒你要联系的人。这样可以保证其他人很容易提出意见，如果需要的话也很容易让其他人参与进来。
+1. 在聊天中，尽量少用提醒全部人员的功能。这个功能只用在那些紧急且重要的事情上，而不只是重要的事情。如果全员提醒用的太多，会导致对单个人员的提醒淹没在大量的提醒中，使之变得不能及时看到。
+如果哪些事情紧急且重要:
+   * 使用 `@here` 提醒这个房间所有 _在线_ 成员。
+   * 使用 `@channel` 提醒 _所有_ 这个房间的人员, 不管是不是不在线状态。
+1. 如果要开视频电话，别人问你要不要视频电话，要么直接发起视频电话或说完"好"以后就等那边建立会话。而不要说完"好"以后等5秒你也开始建立会话，这样就会导致你们同时建立会话，而造成连不上的问题。
+
 
 #### Google Docs
 
@@ -101,11 +83,9 @@ some swag. We'll ship it in gift wrap with "Thanks for your great work on _link_
 from @gitlab".
 1. Don't thank the CEO or other executives for something that the company paid for, thank GitLab instead.
 
-#### Not sure where to go?
+#### 不知道去哪？(Not sure where to go?)
 
-If there is something that you want to discuss, but you do not feel that it is
-a reasonable option to discuss with either your manager or CEO, then you can reach
-out to any of the other C-level GitLabbers or our board member Bruce Armstrong.
+如果有些事情想讨论，但觉得和你的主管或经理讨论都不太合适，你可以直接联系任何你觉得合适讨论的人。
 
 ### GitLab Workflow
 
@@ -113,7 +93,7 @@ out to any of the other C-level GitLabbers or our board member Bruce Armstrong.
 
 1. 要干任何事前都要 **建立** 一个issue。如果这个事情值得花时间做，那么就值得花一点时间建立一个issue，这样的话，其他人就可以知道你在干啥，并且帮助你。你可以根据事情的进展随时修改描述或者关闭这个issue。
 1. 如果有人提出了功能提升的建议，那么就想办法找找有没有哪个issue和他们的建议相似，或者建立一个新issue。然后找他们看能不能把改进建议提交到这个issue上。
-1. 双链接issues 会造成内部混乱，导致无法给reporters汇报。例如**Double link** issues to prevent internal confusion and us failing to report back to the reporters. For example, open an issue with a link to ZenDesk and close the issue with a copy of the response. Or add "Report: " lines to the description with links to relevant issues and feature requests and ensure they are closed and note this with a comment. 如果你不负责汇报，请不要关闭这个issue，而是重新指派这个issue。If you are not responsible for reporting back please do not close an issue, instead re-assign it.
+1. 双链接issues 会造成内部混乱，导致无法给reporters汇报。例如xxx......如果你不负责汇报，请不要关闭这个issue，而是重新指派这个issue。**Double link** issues to prevent internal confusion and us failing to report back to the reporters. For example, open an issue with a link to ZenDesk and close the issue with a copy of the response. Or add "Report: " lines to the description with links to relevant issues and feature requests and ensure they are closed and note this with a comment. If you are not responsible for reporting back please do not close an issue, instead re-assign it.
 1. 如果两个issue相关，则给他们建立一个 **交叉链接** (在相关的两个issue上都建立对方的链接)。 做法是：在两个issue的最顶端放上链接，并对他们之间的关系进行简短描述(报告或其他东西)。 如果不止两个issues，将一个issue当作中心issue，并建立把所有issue的交叉连接都连到这个issue上。
 1. 在讨论完功能后，一定要把达成的共识或结论 **更新到issue中** 。 这样才更容易看到这个issue的状态。 并且每个包括没有一起讨论的人，以后都可以根据这个更新内容来实现功能。 而且可以避免混乱和再次讨论。
 1. 提交 **最小的**工作项是比较合理的。 创建issue时，尽可能地描述一个比较小的修补程序(可以比较快完成)。 针对不同的issues提出改进建议，并将它们联系起来。 如果要写文档或说明，请首先提交一个最多20行的合并请求。
@@ -131,7 +111,7 @@ out to any of the other C-level GitLabbers or our board member Bruce Armstrong.
 
 [d-o-d]: ../engineering/CONTRIBUTING.md#definition-of-done
 
-#### Implement it with a merge request
+#### 使用合并请求来实现一个功能(Implement it with a merge request)
 
 Merge request guidelines for all contributors are described in our [Contribution
 guide][mr-guidelines].
@@ -189,7 +169,7 @@ members:
 1. The last person wishes everyone a good day.
 1. Even if you cannot join the call, consider reviewing the recorded call or at minimum read through the team agenda and the links from there. We often use the team call to make announcements or discuss changes in processes, so make sure to catch up on the news if you have missed a team call (or more).
 
-### Release Retrospectives and Kickoffs
+### 发布回顾和启动(Release Retrospectives and Kickoffs)
 {: #kickoffs}
 
 After GitLab releases a new version on the 22nd of each month, we have a
@@ -219,7 +199,7 @@ share the notes publicly.
 1. The [#random](https://gitlab.slack.com/archives/random) chat channel is your go-to place to share random ideas, pictures, articles, and more. It's a great channel to check out when you need a mental break.
 1. Come hang out any time in the **random room**, an open Google Hangout video chat where anyone with a GitLab email address can come and leave as they please. The link is in the description of the `#random` chat channel; consider bookmarking it. This room is open for all and should be distinct from the [Coffee Break Calls](https://about.gitlab.com/handbook/working-remotely/#coffee-break-calls), which are 1x1 conversations between teammates.
 
-### Scheduling Meetings
+### 安排会议(Scheduling Meetings)
 
 1. If you want to ask GitLabbers if they are available for an event please send a new calendar appointment from and to the company address. This makes it easier for people to check availability and to put on their calendar. It automatically shows up on calendars even when the email is not opened. It is easier to signal presence and to see the status of everyone. Please respond quickly to invites so people can make plans.
 1. Every scheduled meeting should either have a Google Presentation (for example for functional updates that don't require participation) or a Google Doc (for most meetings) linked. If it is a Google Doc it should have an agenda, including any preparation materials (can be a presentation). Put the agenda in a Google Doc that has edits rights for all participants (including people not part of GitLab Inc.). Link the Google Doc from the meeting invite. Take notes of the points and todo's during the meeting. Nobody wants to write up a meeting after the fact and this helps to structure the thought process and everyone can contribute. Being able to structure conclusions and follow up actions in realtime makes a video call more effective than an in-person meeting. If it is important enough to schedule a meeting it is important enough to have a Doc linked. If we want to be on the same page we should be looking at that page.
@@ -246,7 +226,7 @@ doesn't unnecessarily appear on other people's calendars.
 1. Consider using a utility to easily mute/unmute yourself, see [Shush](#shush) in the tools section.
 1. In video calls everyone should own camera and headset, even when they are in the same room. This helps to see the person that is talking clearly on the camera and their name in the list. It also allows people to easily talk and mute themselves. And using a headset prevents an echoing. You wouldn't share an office seat together, don't share your virtual seat at the table.
 
-### User Communication Guidelines
+### 用户沟通指南(User Communication Guidelines)
 
 1. Keep conversations positive, friendly, real, and productive while adding value.
 1. If you make a mistake, admit it. Be upfront and be quick with your correction. If you're posting to a blog, you may choose to modify an earlier post, just make it clear that you have done so.
@@ -257,7 +237,7 @@ doesn't unnecessarily appear on other people's calendars.
 1. Guide users who ask for help or give a suggestion and share links. [Improving Open Development for Everyone](https://about.gitlab.com/2015/12/16/improving-open-development-for-everyone/), [Types of requests](https://about.gitlab.com/2014/12/08/explaining-gitlab-bugs/).
 1. When facing negative comment, respond patiently and treat every user as an individual, people with the strongest opinions can turn into [the strongest supporters](https://about.gitlab.com/2015/05/20/gitlab-gitorious-free-software/).
 
-### Writing Style Guidelines
+### 写作风格指南(Writing Style Guidelines)
 
 1. {: #american-english} At GitLab, we use American English as the standard written language.
 1. Do not use rich text, it makes it hard to copy/paste. Use [Markdown](http://doc.gitlab.com/user/markdown.html) for things stored in git. In Google Docs use 'Normal text' using the style/heading/formatting dropdown and paste without formatting.
