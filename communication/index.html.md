@@ -13,7 +13,7 @@ extra_js:
 - TOC
 {:toc}
 
-We're a **distributed**, **remote-only** company where people work remotely without missing out.
+我们是一个 **分布式的**，**仅远程工作** 的公司We're a **distributed**, **remote-only** company where people work remotely without missing out.
 For this, we use **asynchronous communication** and are as open as we can be by communicating through public issues, chat channels,
 and placing an emphasis on ensuring that conclusions of offline conversations are written down.
 These communication guidelines are meant to facilitate smooth communication in an
@@ -23,7 +23,7 @@ When commenting on posts please keep in mind: "Don't argue but represent."
 
 ### 内部沟通
 
-1. 所有沟通都应该使用中文或英文，即使一对一沟通，因为有时候你需要转发email或者聊天记录。
+1. 所有沟通都应该使用中文或英文，即使是一对一沟通的时候也一样，因为有时候你需要转发email或者聊天记录。
 1. 使用 **异步沟通** 如果可以的话 (用issues和email代替聊天工具), 使用issues比电子邮件更好, 电子邮件比聊天工具更好, 公告在进行团队议程时发布, 并且 [大家应该在没有聊天工具打扰的情况下工作](https://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.21t7089jk). 使用邮件代替聊天工具。就像和使用聊天工具一样，使用内部的短邮件来发送信息和沟通。不要发送像hi Emma这样的浪费时间的信息，首先复制粘贴email的主题到邮件正文中。因为不是随时有时间，一边按照计划工作一边等邮件回复或聊天工具提醒是非常好的工作方法。
 1. 有时候异步沟通是比较好的选择，但是不是默认的沟通方式。面对面或视频[guidelines on video chats](#video-chats)沟通是更好的方式。
 1. 尽量多问问题，但是问的时候，尽量多带些人，人越多回答的就越多，也会有更多人看到答案。(所以使用issues或开一个聊天群来代替一对一的email)，并且一定要把答案记到文档中。
@@ -87,7 +87,7 @@ from @gitlab".
 
 如果有些事情想讨论，但觉得和你的主管或经理讨论都不太合适，你可以直接联系任何你觉得合适讨论的人。
 
-### GitLab Workflow
+### 工作流
 
 #### 所有的事情开始于建立issue(事务、工单、问题)
 
@@ -109,32 +109,23 @@ from @gitlab".
 1. 在一个issue **[完成][d-o-d]** 前，不允许关闭它。
 1. 在 **关闭** 一个issue时，提交一个说明解释一下为什么关闭这个issue。
 
-[d-o-d]: ../engineering/CONTRIBUTING.md#definition-of-done
+[d-o-d]: ../engineering/development/CONTRIBUTING.md#definition-of-done
 
 #### 使用合并请求来实现一个功能(Implement it with a merge request)
 
-Merge request guidelines for all contributors are described in our [Contribution
-guide][mr-guidelines].
+给贡献者编制的合并请求的指南请参考：[Contribution guide][mr-guidelines].
 
-Code review guidelines for reviewers and maintainers are described in our [Code
-Review Guidelines][code-review-guidelines].
+给评审者和维护人员编制的代码评审指南请参考： [Code Review Guidelines][code-review-guidelines].
 
-Following are additional guidelines for GitLab Inc. team
-members:
+下面是给公司内人员的额外的指南:
 
-1. Even when something is not done, share it internally so people can comment
-  early and prevent rework. Create a **[Work In
-  Progress](https://about.gitlab.com/2016/01/08/feature-highlight-wip/)** a merge request so it is not merged by accident.
-1. If any followup actions are required on the issue after the merge request is
-  merged (like reporting back to any customers or writing documentation), avoid
-  auto closing it.
-1. When _you_ are done with your merge request, remove the "WIP" prefix and
-  follow the [Code Review Guidelines][code-review-guidelines].
-1. You can still make changes based on feedback of course, but by removing the
-  "WIP" prefix it clarifies that the main body of work has been completed.
+1. 在开始某项工作的时候，即使还有些事情没完成，可以先提交一个 **先行** 的合并请求来把工作内容分享出来，这样大家就可以尽早提交和避免返工。 提交这个没完成的合并请求时，在合并请求的标题前加一个 **[WIP(Work In Progress)]前缀** 这样的话这个没完工的合并请求就不会被意外的合并进主线了。WIP相关内容可以参考： **[Work In Progress](https://about.gitlab.com/2016/01/08/feature-highlight-wip/)**
+1. 如果还有后续的工作(比如给客户反馈或编写文档)，请在提交合并请求的时候不要选择自动关闭issue。
+1. 如果 __你__ 完成了一个合并请求，请去掉issue上的WIP前缀。 然后根据 [Code Review Guidelines][code-review-guidelines] 进行代码评审.
+1. 在去掉“WIP”前缀后也可以根据反馈来修改内容，去掉“WIP”只是说明主体工作已经完成。
 
-[mr-guidelines]: https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md#merge-request-guidelines
-[code-review-guidelines]: https://docs.gitlab.com/ce/development/code_review.html
+[mr-guidelines]: ../engineering/development/CONTRIBUTING.md#merge-request-guidelines
+[code-review-guidelines]: ../engineering/development/code_review.md
 
 ### Team Call
 
@@ -172,46 +163,36 @@ members:
 ### 发布回顾和启动(Release Retrospectives and Kickoffs)
 {: #kickoffs}
 
-After GitLab releases a new version on the 22nd of each month, we have a
-30-minute call on the next business day reflecting on what could have been
-better:
+在每月22号发布完新版本后，我们要在下一个工作日进行一个30分钟的会议，反思一下我们哪些方面可以做的更好:
 
-1. What went well this month?
-2. What went wrong this month?
-3. What could we have done better?
+1. 这个月什么事情比较顺利?
+2. 这个月出了什么问题?
+3. 什么事情我们可以做的更好?
 
-We spend the first part of the retrospective meeting reviewing the action
-items from the previous month.
+在回顾会议上，第一部分是对上个月的工作项进行回顾。
 
-After the retrospective meeting is done, we launch immediately into the
-kickoff meeting. The product team and other leads will have already have had
-some discussion in a [meta issue on the GitLab.com CE
-tracker](https://gitlab.com/gitlab-org/gitlab-ce/issues?scope=all&state=opened&label_name=meta)
-on what should be prioritized for each release. The purpose of this kickoff is
-to get everyone on the same page and to invite comments.
+在回顾会议完成后，就立即进入启动会议环节。 产品团队和其他领导已经进行了一些讨论，内容是使用“meta”作为标签的issue：[meta issue on the GitLab.com CE tracker](https://gitlab.com/gitlab-org/gitlab-ce/issues?scope=all&state=opened&label_name=meta)。 这些issue是每个发布版本中要优先做的工作。 这个启动会议的目的是统一所有人对工作状况的了解，并对issue进行评论。
 
-We will post the recordings of the kickoff and retrospective to YouTube and
-share the notes publicly.
+启动会议和回顾会议完成后，他们的录像和笔记会发布到共享服务器上以便查阅。
 
 ### Random Chat and Room
 {: #random-room}
 
-1. The [#random](https://gitlab.slack.com/archives/random) chat channel is your go-to place to share random ideas, pictures, articles, and more. It's a great channel to check out when you need a mental break.
-1. Come hang out any time in the **random room**, an open Google Hangout video chat where anyone with a GitLab email address can come and leave as they please. The link is in the description of the `#random` chat channel; consider bookmarking it. This room is open for all and should be distinct from the [Coffee Break Calls](https://about.gitlab.com/handbook/working-remotely/#coffee-break-calls), which are 1x1 conversations between teammates.
+1. 公司或部门的微信群中可以分享一些灵光一闪的想法、图片、文章或其他内容。 如果需要让脑子休息一下可以到这些频道去逛逛。
+1. 只要加了公司微信群的话，就可以到这些地方逛逛：公司微信群、部门微信群。
 
 ### 安排会议(Scheduling Meetings)
 
-1. If you want to ask GitLabbers if they are available for an event please send a new calendar appointment from and to the company address. This makes it easier for people to check availability and to put on their calendar. It automatically shows up on calendars even when the email is not opened. It is easier to signal presence and to see the status of everyone. Please respond quickly to invites so people can make plans.
-1. Every scheduled meeting should either have a Google Presentation (for example for functional updates that don't require participation) or a Google Doc (for most meetings) linked. If it is a Google Doc it should have an agenda, including any preparation materials (can be a presentation). Put the agenda in a Google Doc that has edits rights for all participants (including people not part of GitLab Inc.). Link the Google Doc from the meeting invite. Take notes of the points and todo's during the meeting. Nobody wants to write up a meeting after the fact and this helps to structure the thought process and everyone can contribute. Being able to structure conclusions and follow up actions in realtime makes a video call more effective than an in-person meeting. If it is important enough to schedule a meeting it is important enough to have a Doc linked. If we want to be on the same page we should be looking at that page.
-1. If you want to check if a team member is available for an outside meeting, create a calendar appointment and invite the team member only, after they respond yes then invite outside people.
-1. When scheduling a call with multiple people, invite them using a Google Calendar that is your own, or one specific to the people joining, so the calendar item
-doesn't unnecessarily appear on other people's calendars.
-1. If you want to move a meeting just move the calendar appointment instead of reaching out via other channels, note the change at the top of the description.
-1. Please click 'Guests can modify event' so people can update the time in the calendar instead of having to reach out via other channels. You can install [the Google-Calendar-Guests-Can-Modify-Event-By-Default plugin in Chrome](https://github.com/robin-drexler/Google-Calendar-Guests-Can-Modify-Event-By-Default) to do this automatically.
-1. If you want to schedule a meeting with a person not on the team please use [Calendly](#calendly).
+1. 如果需要确认某个人是否有时间开会，请通过公司邮箱的日历功能给相关人员发送约会。 这样可以更简单的确认他们是否有空并且将这个会议安排到他们的工作日历上。 即使没有打开邮件，这个会议在他们的日历上也会自动显示出来。 根据每个人对会议邀请的出席反馈就可以简单的确认每个人的状态。 请尽快回复开会的邀请以便邀请人安排工作计划。
+1. 每个预定好的会议，都应该有相关PPT或文档的链接。 如果是文档，则需要一个议程表，表内包含所有准备好的(可以展示的)材料。 给每个参会人共享一份可以编辑的议程表。 在会议邀请中写入这个文档链接。 大家要在会议期间记录要点和待办事项。 因为在事后没有人愿意再去写一个会议记录，这有助于组织思维过程，而且每个人都能对记录做出贡献。 因为能够实时构造结论和跟进行动，使用视频通话比亲自开会更有效。 如果是重要到要开会的事情，那么提供一个文档也是很重要的。 如果要大家保持同步，那么大家就应该看同一份文档。
+1. 如果需要外部人员开会，请先给内部人员通过日历发约会邀请，等他们恢复 **同意** 后再邀请外部人员。
+1. 当安排与多个人会议时，请使用自己的日历或专人来邀请他们，这样日历项就不会(不必要的)出现在其他人的日历上。
+1. 如果需要调整会议，不要通过其他途径进行调整，而是直接调整日历上的日历项即可。请将变更内容写到描述的最顶端。
+1. 请选择'Guests can modify event'项， 这样大家都可以通过调整日历上的时间来进行变更，避免了通过其他途径来说明变更情况。
+1. 如果只是和某个人开会请使用[Calendly](#calendly).
 1. When scheduling a meeting we value people's time and prefer the "speedy meetings" setting in our Google Calendar. This gives us meetings of, for example, 25 or 50  minutes leaving some time to write notes etc before continuing to our next call or meeting. (This setting can be found under the calendar Settings menu at "default event duration")
 1. When creating a calendar event that will be used company wide, please place it on the GitLab Availability Calendar. That way the event is easily located by all individuals.
-1. When you need to cancel a meeting, make sure to delete/decline the meeting and choose the option **Delete & update guests** to make sure everyone knows you can't attend and don't wait for you.
+1. 如果需要取消/拒绝一个会议，一定要在删除/拒绝会议时选择 **Delete & update guests** 确保每个人都能知晓你不能出席并且不用等候你了。
 
 ### Video Calls
 
@@ -228,26 +209,26 @@ doesn't unnecessarily appear on other people's calendars.
 
 ### 用户沟通指南(User Communication Guidelines)
 
-1. Keep conversations positive, friendly, real, and productive while adding value.
-1. If you make a mistake, admit it. Be upfront and be quick with your correction. If you're posting to a blog, you may choose to modify an earlier post, just make it clear that you have done so.
-1. There can be a fine line between healthy debate and incendiary reaction. Try to frame what you write to invite differing points of view without inflaming others. You don’t need to respond to every criticism or barb. Be careful and considerate.
-1. Answer questions, thank people even if it’s just a few words. Make it a two way conversation.
-1. Appreciate suggestions and feedback.
-1. Don't make promises that you can't keep.
-1. Guide users who ask for help or give a suggestion and share links. [Improving Open Development for Everyone](https://about.gitlab.com/2015/12/16/improving-open-development-for-everyone/), [Types of requests](https://about.gitlab.com/2014/12/08/explaining-gitlab-bugs/).
-1. When facing negative comment, respond patiently and treat every user as an individual, people with the strongest opinions can turn into [the strongest supporters](https://about.gitlab.com/2015/05/20/gitlab-gitorious-free-software/).
+1. 保持谈话积极、友好、真诚和具有建设性的同时增加价值。
+1. 如果犯错了，就承认错误。 要诚实的和快速的改正。 就像你发了一个有问题的博客，你会去更改以前发布的内容，只要改好了就行。
+1. 坦率的交换意见和争论之间只有一线之隔，试着在不会激怒别人的情况下表达你写的东西是欢迎不同观点的。不需要回应每个批评和坏话，请小心并且考虑周到的沟通。
+1. 回答问题时，也要对那些只写了几个字的人表示感谢。要确保双向沟通。
+1. 对别人提出的建议和反馈应心存感激。
+1. 无法实现的诺言请不要轻易承诺。
+1. 给予寻求帮助的人以指导，并且给他们建议和提供链接。 促进每个人进行开放的开发[Improving Open Development for Everyone](https://about.gitlab.com/2015/12/16/improving-open-development-for-everyone/), [Types of requests](https://about.gitlab.com/2014/12/08/explaining-gitlab-bugs/).
+1. 面对负面的评论，要有耐心的反馈并且要将每个人视作单独的个体，最有意见的人可以变成最坚定的支持者。 [the strongest supporters](https://about.gitlab.com/2015/05/20/gitlab-gitorious-free-software/).
 
 ### 写作风格指南(Writing Style Guidelines)
 
-1. {: #american-english} At GitLab, we use American English as the standard written language.
-1. Do not use rich text, it makes it hard to copy/paste. Use [Markdown](http://doc.gitlab.com/user/markdown.html) for things stored in git. In Google Docs use 'Normal text' using the style/heading/formatting dropdown and paste without formatting.
-1. Don't use ALL CAPS because if feels like shouting.
-1. We use Unix style (lf) line endings, not Windows style (crlf), please ensure `*.md text eol=lf` is set in the repository's `.gitattributes` and run `git config --global core.autocrlf input` on your client.
-1. Do not create links like "here" or "click here". All links should have relevant anchor text that describes what they link to, such as: "GitLab CI source installation documentation".
-1. Always use [ISO dates](https://en.wikipedia.org/wiki/ISO_8601#Calendar_dates) in all writing and legal documents since other formats [lead to online confusion](http://xkcd.com/1179/), so use `yyyy-mm-dd`, for example 2015-04-13, and never 04-13-2015, 13-04-2015, nor 2015/04/13.
-1. If you have multiple points in a comment or email, please number them to make replies easier.
-1. When you reference an issue, merge request, comment, commit, page, doc, etc. and you have the URL available please paste that in.
-1. In making URLs, always prefer hyphens to underscores, and always use lowercase.
+1. {: #简体中文} 在公司中, 简体中文是标准协作语言，也可以配合一定量的英文。
+1. 不要使用富文本(word文档一类的文本)，因为这些文本复制粘贴到其他地方就会变形。 使用 [Markdown](../product/technical-writing/markdown-guide/index.html.md) 在git中存储文档。 如果使用MS Word，则在Word中使用默认文档的风格中的各类风格，粘贴时请不要带格式粘贴。
+1. 在英文中，不要使用全部大写的文字，因为看起来好像在喊叫。
+1. 在一行结尾使用windows style换行(crlf)而不是用Unix style换行(lf)或者Mac style换行(cr)，请确保 `*.md text eol=crlf` 写在代码库的 `.gitattributes` 中并且在客户端中运行 `git config --global core.autocrlf input`。
+1. 不要建立一个链接命名为“点这”。 所有的连接都应该有一个相关的文本来描述链接的东西，例如： "CI资源安装文档".
+1. 在所有书写的文档和法律文书中使用 [ISO日期格式](https://en.wikipedia.org/wiki/ISO_8601#Calendar_dates)。 其他的格式[会造成误解](http://xkcd.com/1179/)，所以使用 `yyyy-mm-dd`，例如：2015-04-13, 不要用04-13-2015、13-04-2015或2015/04/13。
+1. 如果在评论或邮件中有多个观点，请给他们编号以便更容易针对性回复。
+1. 当引用一个issue、合并请求、评论、页面、文档或其他东西，并且有对应链接，请把链接粘贴到引用处。
+1. 在编写链接的时候，用连字符比用下划线好，并且链接中使用英文小写字母。 尽量不要在链接中使用中文，就算是用中文也不要使用转码后的中文，应该使用原始中文文字。
 1. The community include users, contributors, core team members, customers, people working for GitLab Inc., and friends of GitLab. If you want to refer to 'people not working for GitLab Inc.' just say that and don't use the word community. If you want to refer to people working for GitLab Inc. you can also use 'the GitLab Inc. team' but don't use the 'GitLab Inc. employees'.
 1. When we refer to the GitLab community excluding GitLabbers please say 'wider community' instead of 'community'.
 1. All people working for GitLab the company are the [GitLab team](https://about.gitlab.com/team/), we also have the [Core team](https://about.gitlab.com/core-team/) that consists of volunteers.
@@ -256,18 +237,18 @@ doesn't unnecessarily appear on other people's calendars.
 1. Always write GitLab with a capitalized G and L, even when writing GitLab.com.
 1. Always capitalize the names of GitLab [features](https://about.gitlab.com/features/)
 1. Do not use a hyphen when writing the term "open source."
-1. Monetary amounts shouldn't have one digit, so prefer $19.90 to $19.9
-1. If an email needs a response write the ask at the top of it.
+1. 货币中不应该只有一位小数，所以写成 $19.90 比 $19.9 更好。
+1. 如果邮件需要回复，请在邮件顶端写明回复要求。
 1. Use the future version of words, just like we don't write internet with a capital anymore, we write frontend and webhook without a hyphen or space.
 1. Our homepage is https://about.gitlab.com/ (with the `about.` and with `https`).
 1. Try to use the [active voice](https://writing.wisc.edu/Handbook/CCS_activevoice.html) whenever possible.
 1. Please refer to self-hosted installations as on-premises, not on-premise.
-1. If you use headers properly format them (`##` in Markdown, "Heading 2" in Google docs), start at the second header level because header level 1 is for titles, do not end headers with a colon.
+1. 如果使用标题格式 (`##` in Markdown, Word中的"标题 2")，使用第二级标题，因为第一级是给主题使用的。不要在标题末尾使用冒号。
 1. Always use an [Oxford comma](https://en.wikipedia.org/wiki/Serial_comma) in lists of three or more terms.
 1. Always use a single space between sentences rather than two.
-1. Read our [Documentation Styleguide](https://docs.gitlab.com/ce/development/doc_styleguide.md) for more information when writing documentation.
-1. Do not use acronyms when you can avoid it as you can't assume people know what you are talking about. Example: instead of `MR`, write `merge request`
-2. We segment our customers/prospects into 4 segments [Strategic, Large, Mid-Market and Small Medium Business (SMB)](https://about.gitlab.com/handbook/sales/#market-segmentation).
+1. 写文档前先读一下我们的 [文档风格指南](../engineering/development/doc_styleguide.md)。
+1. 不要使用首字母缩写，要不然别人可能就不知道你到底要说什么，比如：不要用 `MR` 而是写 `merge request`。
+2. 我们将客户/愿景分为4段 [战略,巨大的,中端市场和中小企业](../sales/index.html.md#market-segmentation).
 
 ### Beamy Guidelines
 
