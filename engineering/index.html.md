@@ -3,10 +3,10 @@ layout: markdown_page
 title: "Engineering"
 ---
 
-## Communication<a name="reach-engineering"></a>
+## 沟通<a name="reach-engineering"></a>
 
-- [**Public Issue Tracker (for GitLab CE)**](https://gitlab.com/gitlab-org/gitlab-ce); please use confidential issues for topics that should only be visible to team members at GitLab.
-- [**Chat channel**](https://gitlab.slack.com/archives/development); please use the `#development` , `#frontend`, `#infrastructure`, `#ci-cd`, and `#support` chat channels for questions that don't seem appropriate to use the issue tracker or the internal email address for.
+- [**Issue Tracker**](https://gitee.com/zhv/handbook/issues); 
+- [**聊天室**](https://gitlab.slack.com/archives/development); 请使用 `#development` , `#frontend`, `#infrastructure`, `#ci-cd`, 和 `#support` 在聊天室中可以问那些不适合写在issue tracker上或发邮件的问题。
 
 ## On this page
 {:.no_toc}
@@ -14,100 +14,82 @@ title: "Engineering"
 - TOC
 {:toc}
 
-## Other Related Pages
+## 其他相关页面
 
-- [Developer onboarding](/handbook/developer-onboarding)
-- [Engineering Workflow](/handbook/engineering/workflow)
-- [Frequently Used Projects](/handbook/engineering/projects)
-- [Issue Triage Policies](/handbook/engineering/issues/issue-triage-policies)
-- [Critical Security Release Process](/handbook/engineering/critical-release-process)
-- [Performance of GitLab](/handbook/engineering/performance)
-- [Monitoring of GitLab.com](/handbook/infrastructure/monitoring)
-- [Production Readiness Guide](https://gitlab.com/gitlab-com/infrastructure/blob/master/.gitlab/issue_templates/production_readiness.md)
+- [开发人员入职培训](../developer-onboarding)
+- [开发流程](../engineering/workflow)
+- [常用项目](../engineering/projects)
+- [Issue甄别策略](../engineering/issues/issue-triage-policies)
+- [关键安全发布过程](../engineering/critical-release-process)
+- [产品性能](/handbook/engineering/performance)
+- [产品监控](/handbook/infrastructure/monitoring)
+- [产品准备指南](../infrastructure/issue_templates/production_readiness.md)
 
-## GitLab Repositories
+## 公司代码库
 
-GitLab consists of many subprojects. A curated list of GitLab Repositories
-can be found at the [GitLab Engineering Projects](/handbook/engineering/projects) page.
+公司产品由很多子项目构成，他们的代码库地址可以在这个页面查看：[公司开发的项目](../engineering/projects)。
 
-When adding a repository please follow these steps:
-1. Ensure the project is under the gitlab-org namespace for anything related to the application or gitlab-com for anything strictly company related.
-1. [Add the project to the list of GitLab Repositories](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/doc/projects.md)
-1. Add MIT license to the repository. See [MIT License Example](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/LICENSE).
-1. Add Contribution Guide. See [Contribution Example](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md),
-and be sure to refer to the Contributor License Agreements for
-[individuals](https://gitlab.com/gitlab-org/gitlab-ee/blob/master/doc/legal/individual_contributor_license_agreement.md)
-and [corporations](https://gitlab.com/gitlab-org/gitlab-ee/blob/master/doc/legal/corporate_contributor_license_agreement.md).
-1. Add link to `CONTRIBUTING.md` from the project's `README.md`
+添加一个代码库时请按照如下步骤操作:
+1. 确保项目在公司的命名空间下。
+1. [添加项目到项目目录中](https://gitee.com/zhv/note/blob/master/project.md)
+1. 给代码仓库添加MIT许可证。 请见 [MIT许可证示例](../legal/license-agreement/LICENSE)。
+1. 添加开发者指南。 参见 [Contribution Example](../engineering/development/CONTRIBUTING.md), 确保所有的开发者签署了 [个人](../legal/license-agreement/individual_contributor_license_agreement.md) 和 [公司](../legal/license-agreement/corporate_contributor_license_agreement.md) 的贡献许可协议。
+1. 在 `README.md` 文件中添加 `CONTRIBUTING.md` 文件的链接。
 
-## Engineering Groups
+## 工程组
 
-- [Support](/handbook/support)
-- [Backend](/handbook/backend)
-- [Edge](/handbook/edge)
-- [Frontend](/handbook/frontend)
-- [Build](/handbook/build)
-- [UX](/handbook/ux)
-- [Security](/handbook/engineering/security)
-- [Infrastructure](/handbook/infrastructure)
-  - [Production](/handbook/infrastructure/production)
-  - [Database](/handbook/infrastructure/database)
-  - [Gitaly](/handbook/infrastructure/gitaly)
+- [运维](../support)
+- [后端](../backend)
+- [Edge](../edge)
+- [前端](../frontend)
+- [构建](../build)
+- [用户体验](../ux)
+- [安全](../engineering/security)
+- [基础架构](../infrastructure)
+  - [产品](../infrastructure/production)
+  - [数据库](../infrastructure/database)
+  - [Gitaly](../infrastructure/gitaly)
 
-## Collaboration
+## 协作
 
-To maintain our rapid cadence of shipping a new release every month, we must
-keep the barrier low to getting things done. Since our team is distributed
-around the world and therefore working at different times, we need to work
-in parallel and asynchronously as much as possible.
+为了每月可以保持高速的发布节奏，我们必须降低各种障碍来完成各个事项。自从团队分布到各地，并且工作时间也不一样，所以必须更加并行和异步工作。
 
-That also means that if you are implementing a new feature, you should feel
-empowered to work on the entire stack if it is most efficient for you to do so.
+这意味着如果你实现了一个新功能，就应该把这个功能尽快推送到服务器。
 
-## Code quality and standards
+## 代码质量和标准
 
-We need to maintain code quality and standards. It's very important
-that you are familiar with the [Development Guides] in general, and the ones that
-relates to your group in particular:
+为了保证代码质量和标准化，熟悉 [开发指南] 是最基本要求，并且根据所在工作组不同需要参考以下各类指南：
 
-- [UX Guides](https://docs.gitlab.com/ee/development/ux_guide/index.html)
-- [Backend Guides](https://docs.gitlab.com/ee/development/README.html#backend-howtos)
-- [Frontend Guides](https://docs.gitlab.com/ee/development/fe_guide/index.html)
-- [Database Guides](https://docs.gitlab.com/ee/development/README.html#databases)
+- [用户体验指南](../engineering/development/ux_guide/index.md)
+- [后端指南](../engineering/development/README.md#backend-howtos)
+- [前端指南](../engineering/development/fe_guide/index.md)
+- [数据库指南](../engineering/development/README.md#databases)
 
-[Development Guides]: https://docs.gitlab.com/ee/development/README.html
+[开发指南]: ../engineering/development/README.md
 
-## Code Reviews
+## 代码评审
 
-Code reviews are mandatory for every merge request, you should get familiar and
-follow our [Code Review Guidelines](https://docs.gitlab.com/ce/development/code_review.html).
+代码评审是做每次合并请求时的强制要求，所以必须熟悉并遵守我们的[代码评审准则](../engineering/development/code_review.md)。
 
-## Developers on Support Team Rotation
+## 开发人员到运维团队轮换制
 
-See [the fix4all description](/handbook/engineering/fix4all/).
+参见 [the fix4all description](../engineering/fix4all/)。
 
-## Release Managers
+## 发布管理员
 
-The [release-tools repository](https://gitlab.com/gitlab-org/release-tools/tree/master)
-contains useful information about the responsibilities and tasks performed
-by a [release manager](https://gitlab.com/gitlab-org/release-tools/blob/master/doc/release-manager.md).
+在 [发布工具库](../engineering/release-tools/readme.md) 中，包含很多对于 [发布管理员](../engineering/release-tools/doc/release-manager.md) 的职责和任务执行很有用的相关信息。
 
-Because of the volume of work required to get a release out the door, there
-will be two primary release managers:
+由于工作量巨大，所以有两个主要的发布管理员：
 
-1. One in the America time zones
-2. One in Europe/Middle East/Africa (EMEA) or Asia Pacific (APAC)
+1. 一个在本地
+2. 一个在外地
 
-Trained release managers, one in Americas and one on EMEA/APAC, will
-ultimately be in charge of making sure the release candidates (RCs) get created and deployed.
+经过培训的发布管理员，任命后对发布候选版本的建立和部署承担最终责任。
 
-* These release managers need to be very vocal if they need help or something
-is blocking the release candidate (RC)
+* 此发布管理员在需要帮助和对任何影响发布候选版本的问题都要直言不讳的提出。
 
-* Trainee release managers will do most of the hands-on work
-(e.g. cherry-picking, creating RCs, deploying, etc.).
+* 实习的发布管理员需要做大部分的手工工作(例如：挑选候选版、构建候选版本、发布和其他工作)。
 
-* Trainers should allow trainees to do the work, but like a pilot of an
-airplane they can take over when time becomes critical.
+* 培训者应该允许实习生干活，就像飞机主驾驶在关键的时候能够把工作接管下来。
 
-Here is the [upcoming and current list of release managers](/release-managers/).
+这是 [即将上任和已在任的发布管理员列表](/release-managers/)。
