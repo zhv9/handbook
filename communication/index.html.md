@@ -113,15 +113,15 @@ from @gitlab".
 
 #### 使用合并请求来实现一个功能(Implement it with a merge request)
 
-给贡献者编制的合并请求的指南请参考：[Contribution guide][mr-guidelines].
+给开发者编制的合并请求的指南请参考：[开发者指南][mr-guidelines].
 
-给评审者和维护人员编制的代码评审指南请参考： [Code Review Guidelines][code-review-guidelines].
+给评审者和维护人员编制的代码评审准则请参考： [代码评审准则][code-review-guidelines].
 
 下面是给公司内人员的额外的指南:
 
 1. 在开始某项工作的时候，即使还有些事情没完成，可以先提交一个 **先行** 的合并请求来把工作内容分享出来，这样大家就可以尽早提交和避免返工。 提交这个没完成的合并请求时，在合并请求的标题前加一个 **[WIP(Work In Progress)]前缀** 这样的话这个没完工的合并请求就不会被意外的合并进主线了。WIP相关内容可以参考： **[Work In Progress](https://about.gitlab.com/2016/01/08/feature-highlight-wip/)**
 1. 如果还有后续的工作(比如给客户反馈或编写文档)，请在提交合并请求的时候不要选择自动关闭issue。
-1. 如果 __你__ 完成了一个合并请求，请去掉issue上的WIP前缀。 然后根据 [Code Review Guidelines][code-review-guidelines] 进行代码评审.
+1. 如果 __你__ 完成了一个合并请求，请去掉issue上的WIP前缀。 然后根据 [代码评审准则][code-review-guidelines] 进行代码评审。
 1. 在去掉“WIP”前缀后也可以根据反馈来修改内容，去掉“WIP”只是说明主体工作已经完成。
 
 [mr-guidelines]: ../engineering/development/CONTRIBUTING.md#merge-request-guidelines
@@ -207,7 +207,7 @@ from @gitlab".
 1. Consider using a utility to easily mute/unmute yourself, see [Shush](#shush) in the tools section.
 1. In video calls everyone should own camera and headset, even when they are in the same room. This helps to see the person that is talking clearly on the camera and their name in the list. It also allows people to easily talk and mute themselves. And using a headset prevents an echoing. You wouldn't share an office seat together, don't share your virtual seat at the table.
 
-### 用户沟通指南(User Communication Guidelines)
+### 用户沟通准则
 
 1. 保持谈话积极、友好、真诚和具有建设性的同时增加价值。
 1. 如果犯错了，就承认错误。 要诚实的和快速的改正。 就像你发了一个有问题的博客，你会去更改以前发布的内容，只要改好了就行。
@@ -218,7 +218,7 @@ from @gitlab".
 1. 给予寻求帮助的人以指导，并且给他们建议和提供链接。 促进每个人进行开放的开发[Improving Open Development for Everyone](https://about.gitlab.com/2015/12/16/improving-open-development-for-everyone/), [Types of requests](https://about.gitlab.com/2014/12/08/explaining-gitlab-bugs/).
 1. 面对负面的评论，要有耐心的反馈并且要将每个人视作单独的个体，最有意见的人可以变成最坚定的支持者。 [the strongest supporters](https://about.gitlab.com/2015/05/20/gitlab-gitorious-free-software/).
 
-### 写作风格指南(Writing Style Guidelines)
+### 写作风格准则(Writing Style Guidelines)
 
 1. {: #简体中文} 在公司中, 简体中文是标准协作语言，也可以配合一定量的英文。
 1. 不要使用富文本(word文档一类的文本)，因为这些文本复制粘贴到其他地方就会变形。 使用 [Markdown](../product/technical-writing/markdown-guide/index.html.md) 在git中存储文档。 如果使用MS Word，则在Word中使用默认文档的风格中的各类风格，粘贴时请不要带格式粘贴。
