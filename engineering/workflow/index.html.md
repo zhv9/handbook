@@ -15,7 +15,7 @@ For the workflow that applies to everyone please see [PROCESS.md](https://gitlab
 
 ## GitLab Flow
 
-Products at GitLab are built using the [GitLab Flow](http://doc.gitlab.com/ee/workflow/gitlab_flow.html).
+公司使用 [GitLab Flow](./workflow/gitlab_flow.md) 来构建产品。
 
 ## Broken master
 
@@ -62,11 +62,11 @@ Engineering Leads, as well as the VP of Engineering, and post about it in
   issues).
 
 For general guidelines about issues and merge requests, be sure to read the
-[GitLab Workflow][gitlab-workflow].
+[公司工作流][公司工作流].
 
 [priority-issues]: https://gitlab.com/groups/gitlab-org/issues?scope=all&sort=priority&state=opened&milestone_title=%23started&assignee_id=0
 [ce-ee-docs]: https://docs.gitlab.com/ee/development/limit_ee_conflicts.html
-[gitlab-workflow]: /handbook/communication/#gitlab-workflow
+[公司工作流]: ../../communication/#公司工作流
 
 ## Working in Teams
 

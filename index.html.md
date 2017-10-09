@@ -33,7 +33,7 @@ And we welcome feedback<a name="feedback"></a>. Please make a <a href="https://g
   * [Visas](/people-operations/visas/)
 * [Engineering](/engineering)
   * [运维](/support)
-  * [基础设施](/infrastructure)
+  * [基础架构](/infrastructure)
     * [数据库团队](/infrastructure/database)
   * [后端](/backend)
   * [前端](/frontend)
