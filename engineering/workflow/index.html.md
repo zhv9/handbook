@@ -3,8 +3,8 @@ layout: markdown_page
 title: "Engineering Workflow"
 ---
 
-This document explains the workflow for anyone working with issues in GitLab Inc.
-For the workflow that applies to everyone please see [PROCESS.md](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/PROCESS.md).
+这个文档解释了在公司中每个人在对项目issues工作时所遵循的工作流。
+对于适用于每个人的工作流，请参见 [PROCESS.md](../../engineering/development/PROCESS.md).
 
 ## On this page
 {:.no_toc}
@@ -17,98 +17,64 @@ For the workflow that applies to everyone please see [PROCESS.md](https://gitlab
 
 公司使用 [GitLab Flow](./workflow/gitlab_flow.md) 来构建产品。
 
-## Broken master
+## 损坏的 master
 
-If you notice that the tests for the `master` branch of GitLab CE or EE are
-failing (red) or broken (green as a false positive), fixing this takes priority
-over everything else development related, since everything we do while tests are
-broken may break existing functionality, or introduce new bugs and security
-issues.
+如果发现 `master` 库的自动化测试失败(红色)或被破坏(绿色带有负号)，解决这个问题比其他任何开发事项都重要。 只要我们做了任何导致自动化测试失败，都意味着已有功能被破坏了，或者引入新的bug和安全问题。
 
-Create an issue, post about it in `#development` so that other developers are
-aware of the problem and can help. If the problem cannot be fixed by you within
-a few hours, `@mention` the relevant Engineering Leads and CTO in the issue and
-on Slack, so that resources can be assigned to fix it as quickly as possible.
+建立一个issue，把它发布到 `#development` 频道，以便其他开发人员就可以意识到这个问题并且可以提供帮助。 如果你无法在数个小时内修复问题，在这个issue和中协作群(Slack)中 `@mention` 相关的工程师主管和CTO。 这样就可以最快速度分配其他资源来修复这个issue。
 
-## Security issues
+## 安全 issues
 
-If you find or are alerted of a security issue, major or small, fixing this
-takes priority over everything else development related.
+如果发现了安全issue警报，无论大还是小，修复这个是所有开发中最高优先级的事项。
 
-Create a **confidential issue** mentioning the Security and the relevant
-Engineering Leads, as well as the VP of Engineering, and post about it in
-`#security`.
+建立一个 **confidential issue** 提醒安全团队和相关工程主管，包括工程副总，并且将它发布到 `#security` 频道。
 
 ## Basics
 
-1. Start working on an issue you’re assigned to. If you’re not assigned to any issue, find the issue with the highest priority you can work on, by relevant label. [You can use this query, which sorts by priority for the started milestones][priority-issues], and filter by the label for your team.
-1. If you need to schedule something or prioritize it, apply the appropriate
-  labels (see [Scheduling issues](#scheduling-issues)).
-1. If you are working on an issue that touches on areas outside of your expertise, be
-  sure to mention someone in the other group(s) as you soon as you start working on it.
-  This allows others to give you early feedback, which should save you time in the
-  long run.
-1. You are responsible for the issue that you're assigned to. This means it has
-  to ship with the milestone it's associated with. If you are not able to do
-  this, you have to communicate it early to your manager. In teams, the team is
-  responsible for this (see [Working in Teams](#working-in-teams)).
-1. You (and your team, if applicable) are responsible for:
-  - ensuring that your changes [apply cleanly to GitLab Enterprise Edition][ce-ee-docs].
-  - the testing of a new feature or fix, especially right after it has been
-    merged and packaged.
-1. Once a release candidate has been deployed to the staging environment, please
-  verify that your changes work as intended. We have seen issues where bugs did
-  not appear in development but showed in production (e.g. due to CE-EE merge
-  issues).
+1. 开始处理你被分配的issue。 如果你没有分配任何issue，根据相关的标签，找一个你可以做的最高优先级的issue。 [你可以使用这个查询，根据优先级排序已开始的里程碑中的issue][priority-issues]，同时通过标签筛选属于你团队的issue。
+1. 如果你需要将某些事情列入日程或做区分，给它添加适当的标签。(参见 [Scheduling issues](#scheduling-issues)).
+1. 如果你在处理某些issue时碰到了超出你经验的事项，请一定要在开始这项工作时告知其他组的同事。 这样其他人员就可以尽早给你反馈，从长远来看，这可以节省你的时间。
+1. 你需要对分配给你的issue负责。 这意味着它必须与它所关联的里程碑一起提交。 如果你没有办法完成这事，你应该尽早和你的经理沟通。 在团队中，整个团队对这个 (参见 [在团队中工作](#working-in-teams)) 负责。
+1. 你(和你的团队，如果适用)为以下事项负责：
+  - 确保你的变更 [可以干净的应用于GitLab Enterprise Edition][ce-ee-docs] (减少相似项目合并时的冲突)。
+  - 对新功能修正进行测试，特别是在合并和打包后。
+1. 一旦发布候选版已部署到模拟环境中，请验证您的更改是否按预期工作。 因为出现过开发中没有出现但在生产中出现错误的问题。(例如 由于 CE-EE 合并导致的issues)。
 
-For general guidelines about issues and merge requests, be sure to read the
-[公司工作流][公司工作流].
+关于issues和合并请求的一般准则，请参考 [公司工作流][公司工作流].
 
 [priority-issues]: https://gitlab.com/groups/gitlab-org/issues?scope=all&sort=priority&state=opened&milestone_title=%23started&assignee_id=0
 [ce-ee-docs]: https://docs.gitlab.com/ee/development/limit_ee_conflicts.html
-[公司工作流]: ../../communication/#公司工作流
+[公司工作流]: ../../communication/index.html.md#公司工作流
 
 ## Working in Teams
 
-For larger issues or issues that contain many different moving parts,
-you'll be likely working in a team. This team will typically consist of a
-[backend developer](https://about.gitlab.com/jobs/developer/), a
-[frontend developer](https://about.gitlab.com/jobs/frontend-engineer/), a
-[UX designer](https://about.gitlab.com/jobs/ux-designer/) and a
-[product manager](https://about.gitlab.com/jobs/product-manager/).
+对于工作或包括很多不同组件的工作，是需要一个团队进行工作的。 一般的团队由以下几个方面组成。
+[后端开发](https://about.gitlab.com/jobs/developer/)，
+[前端开发](https://about.gitlab.com/jobs/frontend-engineer/)，
+[用户体验设计](https://about.gitlab.com/jobs/ux-designer/)，
+[产品经理](https://about.gitlab.com/jobs/product-manager/)。
 
-1. Teams have a shared responsibility to ship the issue in the planned release.
-    1. If the team suspects that they might not be able to ship something in
-  time, the team should escalate / inform others as soon as possible.
-  A good start is informing your lead.
-    1. It's generally preferable to ship a smaller iteration of an issue,
-  than ship something a release later.
-1. Consider starting a Slack channel for a new team,
-but remember to write all relevant information in the related issue(s).
-You don't want to have to read up on two threads, rather than only one, and
-Slack channels are not open to the greater GitLab community.
+1. 团队每个人在解决计划的发布版中issue有着共同的责任。
+    1. 如果团队发现有可能无法按时完成某些事项，团队应该尽快向上一级/告知其他团队。 最佳的方法是告知你的领导。
+    1. 一般来说，发行一个较小的迭代，比稍后发布一个版本要好。
+1. 考虑一下给新团队开一个协助频道(Slack)，但是请记住要在相关issues中写下所有相关信息。 相对于单信息通道，你不会想去两个信息通道找信息的。 协助频道(Slack)不能开放给公司以外的人员。
 
 ## Choosing something to work on
 
-Start working on things with the highest priority in the current milestone. The
-priority of items are defined under labels in the repository, but you are able
-to sort by priority.
+从目前里程碑中最高优先级的事情开始工作。 每个项目的优先级是通过库中的标签来定义的，同时你也可以通过优先级进行排序。
 
-After sorting by priority, choose something that you’re able to tackle and falls
-under your responsibility. That means that if you’re a frontend developer,
-you work on something with the label `frontend`.
+在通过优先级排序后，选择那些属于你职责并且可以处理事项。 这意味着对于前端开发，你应该处理有 `前端` 标签的事项。
 
-To filter very precisely, you could filter all issues for:
+为了准确筛选，你可以对issues通过以下几个事项进行筛选：
 
-- Milestone: Started
-- Assignee: Unassigned
-- Label: Your label of choice. For instance `CI/CD`, `Discussion`, `Edge`, `frontend`, or `Platform`
-- Sort by priority
+- 里程碑: 已开始
+- 分配情况: 未分配
+- 标签: 你选择的标签。 例如 `持续集成(CI)/持续交付(CD)`, `讨论`, `Edge`, `前端`, or `平台`
+- 通过优先级排序
 
-[Use this link to quickly set the above parameters][priority-issues]. You'll
-still need to filter by the label for your own team.
+[使用这个链接来快速的设置上面所有参数][priority-issues]。 你还需要按照你所在的组负责的标签进行筛选。
 
-If you’re in doubt about what to work on, ask your lead. They will be able to tell you.
+如果对你要做哪些事有疑问，请问下你的领导。 他们会告诉你的。
 
 ## Triaging and reviewing code from the rest of the community
 
