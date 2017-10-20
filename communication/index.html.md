@@ -91,18 +91,18 @@ from @gitlab".
 
 #### 所有的事情开始于建立issue(事务、工单、问题)
 
-1. 要干任何事前都要 **建立** 一个issue。如果这个事情值得花时间做，那么就值得花一点时间建立一个issue，这样的话，其他人就可以知道你在干啥，并且帮助你。你可以根据事情的进展随时修改描述或者关闭这个issue。
-1. 如果有人提出了功能提升的建议，那么就想办法找找有没有哪个issue和他们的建议相似，或者建立一个新issue。然后找他们看能不能把改进建议提交到这个issue上。
-1. 双链接issues 会造成内部混乱，导致无法给reporters汇报。例如xxx......如果你不负责汇报，请不要关闭这个issue，而是重新指派这个issue。**Double link** issues to prevent internal confusion and us failing to report back to the reporters. For example, open an issue with a link to ZenDesk and close the issue with a copy of the response. Or add "Report: " lines to the description with links to relevant issues and feature requests and ensure they are closed and note this with a comment. If you are not responsible for reporting back please do not close an issue, instead re-assign it.
+1. 要干任何事前都要 **建立** 一个issue。 因为如果这个事情值得花时间做，那么就值得花一点时间建立一个issue。 这样的话，别人就可以知道你在干啥，并且帮助你。你可以根据事情的进展随时修改描述或者关闭这个issue。
+1. 如果有人提出了功能提升的建议，那么就想办法找找有没有哪个issue和他们的建议相似。 或者建立一个新issue，然后找他们看能不能把改进建议提交到这个issue上。
+1. **双重链接** issues是为了防止混乱，避免没有给提交issue的人反馈。 例如有人开了一个issue，并且在这个issue上添加了另一个地方的链接(实际会在这里反馈)，之后根据另一个地方的反馈信息关闭了这个issue。 或将对应的“报告”添加到描述中，并链接到相关问题和特性请求。 所以如果你不负责汇报这个issue情况，请不要关闭这个issue，而是重新指派这个issue给对应的人。
 1. 如果两个issue相关，则给他们建立一个 **交叉链接** (在相关的两个issue上都建立对方的链接)。 做法是：在两个issue的最顶端放上链接，并对他们之间的关系进行简短描述(报告或其他东西)。 如果不止两个issues，将一个issue当作中心issue，并建立把所有issue的交叉连接都连到这个issue上。
-1. 在讨论完功能后，一定要把达成的共识或结论 **更新到issue中** 。 这样才更容易看到这个issue的状态。 并且每个包括没有一起讨论的人，以后都可以根据这个更新内容来实现功能。 而且可以避免混乱和再次讨论。
-1. 提交 **最小的**工作项是比较合理的。 创建issue时，尽可能地描述一个比较小的修补程序(可以比较快完成)。 针对不同的issues提出改进建议，并将它们联系起来。 如果要写文档或说明，请首先提交一个最多20行的合并请求。
-1. 不要让issues打开以后好长时间没人管，issues应该是 **可操作** 和 **可实现** 的。 如果被指派一个issue但没时间去做，请将它指派给其他人。
-1. 要有意识地 **优先** 考虑你的工作。 每项工作的优先级取决于多个因素： 有没有团队成员在等候回答？ 这个工作延迟以后的影响是什么？ 有多少人被这事影响？ 有没有其他方面的影响？ 这个是详细的[Engineering Workflow](../engineering/workflow)。
-1. 使用公共issue跟踪页面，来跟踪所有的事情。每个项目都有各自相关的issue跟踪页面。
+1. 在讨论完功能后，一定要把达成的共识或结论 **更新到issue中** 。 这样才更容易跟踪这个issue的状态。 并且包括没有一起讨论的所有人，以后都可以根据这个更新内容来实现功能。 而且可以避免混乱和再次讨论。
+1. 提交工作项时比较合理的方法是提交 **最小的** 工作项。 创建issue时，尽可能地描述一个比较小的修补程序(可以比较快完成)。 针对不同的issues提出改进建议，并将它们联系起来。 如果要写文档或说明，请首先提交一个最多20行的合并请求。
+1. 不要让issues打开以后长时间没人管，issues都应该是 **可操作** 和 **可实现** 的。 如果被指派了一个issue但没时间去做，请将它指派给其他人。
+1. 要有意识地 **优先** 考虑你的工作。 每项工作的优先级取决于多个因素： 有没有团队成员在等候答复？ 这个工作延迟以后的影响是什么？ 有多少人被这事影响？ 有没有其他方面的影响？ 这个是详细的[Engineering Workflow](../engineering/workflow)。
+1. 使用公共issue跟踪页面，来跟踪所有的事情。 每个项目都有各自相关的issue跟踪页面。
 1. 选择目前 **里程碑** 中的issues进行工作。例如：[milestone](https://gitlab.com/groups/gitlab-org/milestones).
 1. 一般情况下尽量不指派issues，让大家在里程碑中 **自己选issues**。
-1. 如果准备做哪个issue，那么就先指派给自己。 但不要晚于你开始工作的时间。 如果完成了这个issue的一部分，并且需要其他人再做下一步工作，那么就 **重新指派** 这个issue给那个人。
+1. 如果准备做哪个issue，那么就先指派给自己，但不要晚于你开始工作的时间。 如果完成了这个issue的一部分，并且需要其他人再做下一步工作，那么就 **重新指派** 这个issue给那个人。
 1. 在重新指派一个issue前，要确保issue中有最新的进展信息。 issue的内容应该是 **唯一正确的信息来源**。
 1. 在处理一个issue时，尽量 **寻求同事的反馈** 例如：如果你是设计师，并且提出了一个设计，让一个同事复查(review)一下你的设计。如果他们赞同了，那么就可以进行下一步工作了。如果提出了建议，你就有机会提升你的设计了。 这样促进了协作，提升了每个人的技能。
 1. 我们信守 **诺言**，但不达成 **内部共识** 就不对外许诺言。
@@ -127,7 +127,7 @@ from @gitlab".
 [mr-guidelines]: ../engineering/development/CONTRIBUTING.md#merge-request-guidelines
 [code-review-guidelines]: ../engineering/development/code_review.md
 
-### Team Call
+### 团队会议
 
 1. Schedule
    * PST: <span id="main-PST"></span>
@@ -137,30 +137,29 @@ from @gitlab".
    * PST: <span id="apac-PST"></span>
    * UTC: <span id="apac-UTC"></span>
    * <span id="apac-abbr"></span>: <span id="apac-USER"></span>
-1. Everyone at GitLab is invited to the team call.
-1. There is an additional makeup team call on Fridays where anyone who missed their weekend update can share what they have been up to. Optionally, team members can share an update if they feel so inclined. Please add your name to the list for that day. 
-1. We also have a team call for GitLabbers in the APAC region to share their weekend update. This call will also be recorded so the rest of the team can see what their colleagues have been up to! Everyone is encouraged to join this call as well, but it is not mandatory.
-1. Every last Friday of the month we have an AMA to talk about anything our team is thinking about.
-1. We use [Zoom](https://zoom.us) for the call since Google Hangouts is capped at 15 people (please be sure to mute your microphone). The link is in the calendar invite and also listed at the top of the team agenda Google Doc called _Team Agenda_.
-1. The call is recorded automatically, and all calls are transferred every hour to a Google Drive folder called "GitLab Videos". There is a subfolder called "GitLab Team Call", which is accessible to all users with a GitLab.com e-mail account.
-1. We start on time and will not wait for people.
-1. The person who has the first item on the agenda starts the call.
-1. If you are unable to attend just add your name to the team agenda as "Not attending".
-1. We start by discussing the subjects that are on the agenda for today.
-   * Everyone is free to add subjects. Please start with your name and be sure to link to an issue, merge request or commit if it is relevant.
-   * When done with a point mention the subject of the next item and hand over to the next person.
-   * When someone passes the call to you, no need to say, “Can you hear me?” Just begin talking. If we can’t hear you, we’ll let you know.
-1. New team members should connect to their first team call 10 minutes before the call starts to make sure Zoom, your camera, and your microphone are all working properly. The new team member's manager will introduce them and ask the following questions: "Tell us about where you were before GitLab, why you wanted to join our team, and what you like to do in your spare time."
-1. We ask 15-20 people per day to share updates about the most exciting thing from your past or upcoming week/weekend. If anyone has something they'd like to talk about, last person in the list will ask the group if they have anything else to share.
-   * The team agenda lists who is meant to speak on which day; this can be altered daily if conflicts arise.
-   * There is no need to excuse yourself with "I didn't do anything interesting", "I just watched television" or "That's all". It is not a competition. Instead share the most interesting detail, for example what television show you watched, book you are reading, video game you played or what recipe you cooked.
-1. The sequence of asking people is in a random order where each team member is assigned a day. Since we are growing rapidly, GitLabbers share their weekend update every two weeks. Days are split into group A and group B, which alternates depending on the week. People Ops will denote on the agenda which group will share that day. New GitLabbers will share every week for the first three months on Wednesdays. If there are non-team page people in the call we end with those.
-1. It is OK to talk over people or interrupt people to ask questions, cheer for them or show your compassion. This to encourage more conversation and feedback in the call.
-1. Please look if the person you hand over to is present in the participant list so you don't hand over to someone who is not present.
-1. The last person wishes everyone a good day.
-1. Even if you cannot join the call, consider reviewing the recorded call or at minimum read through the team agenda and the links from there. We often use the team call to make announcements or discuss changes in processes, so make sure to catch up on the news if you have missed a team call (or more).
+1. 公司每个人都应该参加团队会议。
+1. 星期五有一个额外的团队会议，任何错过周末分享会的人都可以分享他们所做的一切事情。 或者，团队成员如果希望的话也可以分享共享他们的最新情况。 请将你们的名字添加到那天的列表中。
+1. 我们还会有一个亚太地区的团队会议来分享每个人周末过的怎么样。 这个会议也会录制下来，这样其他团队可以看看他们同事在干啥。 每个人都鼓励加入这个会议中来，但是不是强制的。
+1. 每个月的最后一个星期五，我们都有一个头脑风暴(Activate Mind and Attention)来讨论我们团队正在考虑要做的事情。
+1. 会议录像会自动录制下来，并上传到网盘上。对应的子目录是“团队会议”，并且所有有公司账号的人员都能查看。
+1. 我们准时开始，不会等候任何人。
+1. 在日程上第一项的人发起这个会议。
+1. 如果你无法参会，只要在日程上你的名字后填上“不参加”。
+1. 我们首先讨论今天议程上的议题。
+   * 每个都可以自由增加议题。 请以你的名字开头，并且将相关的issue、合并请求或提交的信息的链接放到后面。 
+   * 当完成某一点时，提醒下一个项目的议题，然后交给下一个人。
+   * 如果有人将会议主题转交给你，不用问别人能不能听到你说话，直接开说就行了，别人如果听不见，就会告诉你的。
+1. 新团队成员，应该提前十分钟开始确认软件、相机和麦克风都能正常工作。 新团队成员的主管会进行介绍，并问以下问题：“说说你来公司前在哪工作或学习，为什么想加入我们团队，你空闲时间都干啥，爱好是什么。”
+1. 我们会每天要求15-20人分享一下他们上一周或下一周末最激动人心的事情。 日程中最后一个人会问大家是否还有其他事情可分享的，这时如果任何人有任何事情想说就可以提出了。
+   * 团队的议程列出了谁打算在哪一天发言。 如果出现冲突，这个日程每天都可以调整。
+   * 没有必要说“我没有做任何有趣的事”、“我只是看了电视”或“仅此而已”。 这并不是一场比赛。 相反，分享最有趣的细节，例如你看的电视节目，你正在读的书，你玩的电子游戏或者你做的食谱。
+1. 被问到的人的顺序是随机的，每个团队成员被分配一天。 如果人多的话，我们会每两周为周期来做分享，分成A组和B组交替进行分享。 新成员前三个月的每周三都会被安排分享。 如果有没有分配团队的成员，我们最后会安排他们分享。
+1. 谈论别人或打断别人问问题是可以的，为他们欢呼或表达你的同情。 这样可以在会议中鼓励更多的交谈和反馈。
+1. 如果要给某人提交东西请确认那人是否在参加者名单中，这样你就不会造成没法交给那个人的情况发生了。
+1. 最后一个向大家祝福，祝大家有美好的一天。
+1. 即使你无法参会，请在会后看会议录像，或至少通读团队议程和相关链接。 因为我们经常在会议中发布公告和讨论变更，所以如果没赶上会议，也请确保这样来和我们保持同步。
 
-### 发布回顾和启动(Release Retrospectives and Kickoffs)
+### 发布回顾和启动会议
 {: #kickoffs}
 
 在每月22号发布完新版本后，我们要在下一个工作日进行一个30分钟的会议，反思一下我们哪些方面可以做的更好:
@@ -190,22 +189,14 @@ from @gitlab".
 1. 如果需要调整会议，不要通过其他途径进行调整，而是直接调整日历上的日历项即可。请将变更内容写到描述的最顶端。
 1. 请选择'Guests can modify event'项， 这样大家都可以通过调整日历上的时间来进行变更，避免了通过其他途径来说明变更情况。
 1. 如果只是和某个人开会请使用[Calendly](#calendly).
-1. When scheduling a meeting we value people's time and prefer the "speedy meetings" setting in our Google Calendar. This gives us meetings of, for example, 25 or 50  minutes leaving some time to write notes etc before continuing to our next call or meeting. (This setting can be found under the calendar Settings menu at "default event duration")
-1. When creating a calendar event that will be used company wide, please place it on the GitLab Availability Calendar. That way the event is easily located by all individuals.
 1. 如果需要取消/拒绝一个会议，一定要在删除/拒绝会议时选择 **Delete & update guests** 确保每个人都能知晓你不能出席并且不用等候你了。
 
 ### Video Calls
 
-1. For smaller meetings we use Google Hangouts or [Appear.in](https://appear.in/), for larger meetings we prefer [Zoom](https://gitlab.zoom.us/) (Google Hangouts technical limit is 15 for scheduled meetings).
-1. For meetings that are scheduled via calendar there is automatically a Google Hangout URL added, this is the meeting place. Having a url in advance is much more reliable than trying to call via hangouts as the meeting start.
-1. Google Calendar also has a [Zoom plugin](https://chrome.google.com/webstore/detail/zoom-scheduler/kgjfgplpablkjnlkjmjdecgdpfankdle?hl=en-US) where you can easily add a Zoom link for a videocall to the invite
-1. For meetings that are scheduled with Zoom, make sure to take out the Google Hangout link to avoid confusion.
-   1. If you need more privileges on Zoom (longer meeting times, more people in the meeting, etc.), please contact People Ops as described [specifically for Zoom](/handbook/tools-and-tips/#sts=Zoom).
-   1. Note that if you select to record meetings to the cloud (setting within Zoom), they will be automatically placed in the GitLab Videos folder in Google Drive; on an hourly basis. You can find these videos in Google Drive by entering in the search bar: `title:"GitLab Videos" source:domain`.
-   1. Note also that after a meeting ends, Zoom may take some to process the recording before it is actually available. The sync to Google Drive happens on the hour mark, so if the recording is not available, it may take another hour to be transferred.
-1. Use a headset with a microphone, [Apple Earpods](http://www.apple.com/shop/product/MD827LL/A/apple-earpods-with-remote-and-mic) are great. Do not use computer speakers, they cause an echo. Do not use your computer microphone, it accentuates background noise. If you want to use your [Bose headphones](https://www.bose.com/en_us/products/headphones/over_ear_headphones/quietcomfort-25-acoustic-noise-cancelling-headphones-apple-devices.html#v=qc25_black) that is fine but please ensure the microphone is active.
-1. Consider using a utility to easily mute/unmute yourself, see [Shush](#shush) in the tools section.
-1. In video calls everyone should own camera and headset, even when they are in the same room. This helps to see the person that is talking clearly on the camera and their name in the list. It also allows people to easily talk and mute themselves. And using a headset prevents an echoing. You wouldn't share an office seat together, don't share your virtual seat at the table.
+1. 对于视频会议我们使用钉钉，对于大型会议我们使用QQ视频会议(钉钉只能支持30人，QQ可以支持50人)。
+1. 请使用头戴耳麦 [Apple Earpods](http://www.apple.com/shop/product/MD827LL/A/apple-earpods-with-remote-and-mic)。 请不要使用电脑音箱，因为会产生回声。 请不要使用电脑麦克风，因为会有背景噪音。 如果你想使用牛逼的 [Bose headphones](https://www.bose.com/en_us/products/headphones/over_ear_headphones/quietcomfort-25-acoustic-noise-cancelling-headphones-apple-devices.html#v=qc25_black) 请确定你的麦克风开着。
+1. 请使用一些工具来达到快捷的静音/取消静音，参见工具选项中的[Shush](#shush)软件。
+1. 在视频会议中每个人都要有摄像头和头戴耳麦，即使他们在同一个房间中。 这样可以在列表中看到谁在说话，并且说话声音也比较清晰。
 
 ### 用户沟通准则
 
@@ -216,7 +207,7 @@ from @gitlab".
 1. 对别人提出的建议和反馈应心存感激。
 1. 无法实现的诺言请不要轻易承诺。
 1. 给予寻求帮助的人以指导，并且给他们建议和提供链接。 促进每个人进行开放的开发[Improving Open Development for Everyone](https://about.gitlab.com/2015/12/16/improving-open-development-for-everyone/), [Types of requests](https://about.gitlab.com/2014/12/08/explaining-gitlab-bugs/).
-1. 面对负面的评论，要有耐心的反馈并且要将每个人视作单独的个体，最有意见的人可以变成最坚定的支持者。 [the strongest supporters](https://about.gitlab.com/2015/05/20/gitlab-gitorious-free-software/).
+1. 面对负面的评论，要有耐心的反馈并且要将每个人视作单独的个体，最有意见的人可以变成[最坚定的支持者](https://about.gitlab.com/2015/05/20/gitlab-gitorious-free-software/)。
 
 ### 写作风格准则(Writing Style Guidelines)
 
@@ -229,14 +220,8 @@ from @gitlab".
 1. 如果在评论或邮件中有多个观点，请给他们编号以便更容易针对性回复。
 1. 当引用一个issue、合并请求、评论、页面、文档或其他东西，并且有对应链接，请把链接粘贴到引用处。
 1. 在编写链接的时候，用连字符比用下划线好，并且链接中使用英文小写字母。 尽量不要在链接中使用中文，就算是用中文也不要使用转码后的中文，应该使用原始中文文字。
-1. The community include users, contributors, core team members, customers, people working for GitLab Inc., and friends of GitLab. If you want to refer to 'people not working for GitLab Inc.' just say that and don't use the word community. If you want to refer to people working for GitLab Inc. you can also use 'the GitLab Inc. team' but don't use the 'GitLab Inc. employees'.
-1. When we refer to the GitLab community excluding GitLabbers please say 'wider community' instead of 'community'.
-1. All people working for GitLab the company are the [GitLab team](https://about.gitlab.com/team/), we also have the [Core team](https://about.gitlab.com/core-team/) that consists of volunteers.
-1. Please always refer to GitLab Inc. people as GitLabbers, not employees.
-1. Use inclusive and gender-neutral language in all writing. So for example, write "they, their" instead "he, his".
-1. Always write GitLab with a capitalized G and L, even when writing GitLab.com.
-1. Always capitalize the names of GitLab [features](https://about.gitlab.com/features/)
-1. Do not use a hyphen when writing the term "open source."
+1. 所有在公司工作的人员都属于 [公司的团队](https://about.gitlab.com/team/)， 我们也有由志愿者组成的 [核心团队](https://about.gitlab.com/core-team/)。
+1. 公司是大家共同创造的，大家都是公司的一员，而不是雇员。
 1. 货币中不应该只有一位小数，所以写成 $19.90 比 $19.9 更好。
 1. 如果邮件需要回复，请在邮件顶端写明回复要求。
 1. Use the future version of words, just like we don't write internet with a capital anymore, we write frontend and webhook without a hyphen or space.
@@ -250,22 +235,7 @@ from @gitlab".
 1. 不要使用首字母缩写，要不然别人可能就不知道你到底要说什么，比如：不要用 `MR` 而是写 `merge request`。
 2. 我们将客户/愿景分为4段 [战略,巨大的,中端市场和中小企业](../sales/index.html.md#market-segmentation).
 
-### Beamy Guidelines
-
-Beamy is our company conference call robot. It lives in the San Francisco Howard St. office.
-Its main purpose is to allow those outside of the office a view into the space and people.
-When you call in to the beam your face will appear on the screen (so make sure your webcam
-works) and you can drive the robot around the office. It simulates being in the space without
-physically being there. It is really cool and everyone should try it and have fun with it.
-
-* You need an invite email to connect and to download a desktop client, please @mention Emily in the #general channel if you don't have the invite yet.
-* **Beamy times**: 8am until 6pm Pacific time. [Please check the current time!](https://time.is/San_Francisco) on workdays and during all company events, for other times please @mention Sytse in the Slack #valley channel to see if it is OK. It is on auto connect so you'll beam right in.
-* The email invite will come from "Suitable Tech". Once you are sent an invite you can beam in at any time and drive around our beam. Don’t forget to park it back on the charger when you are done. You can do so by driving up to the charger, when you see a green outline press AND HOLD 'p' until it's parked. Make sure it is charging, otherwise try again.
-* If you don't use headphones be careful about your volume and microphone placement, it might start singing, if so immediately mute your microphone and switch to headphones.
-* More info can be found at https://www.suitabletech.com/
-* Please report any questions or issues you have about the beam in the Slack #peopleops channel.
-
-### Company phone number
+### 公司电话
 {: #phone-number}
 
 If you need to provide the details of GitLab's contact information you can take the [address of the office](https://about.gitlab.com/visiting/) for reference; or the [mailing address](https://about.gitlab.com/handbook/people-operations/#addresses) of the office in the Netherlands if that is more applicable.
